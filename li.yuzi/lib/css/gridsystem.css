@@ -37,7 +37,7 @@
 .col-11 { grid-column: span 11;}
 .col-12 { grid-column: span 12;}
 
-/*Extra Small*/
+/*Extra Small Breakpoint*/
 @media (min-width: 0) {
 	.col-xs-1 { grid-column: span 1;}
 	.col-xs-2 { grid-column: span 2;}
