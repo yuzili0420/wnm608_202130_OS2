@@ -308,10 +308,6 @@ a:hover {
       width:initial;
  }
 
-.centered-button {
-    text-align: center;
-    margin-top: 2em;
-
 .btn.sell {
       background-color:var(--color-purchase);
  }
@@ -320,7 +316,7 @@ a:hover {
 .hotdog {
    display: inline-flex;
    width: 100%;
-    line-height: 3rem; 
+   line-height: 3rem; 
    font: inherit;
    background-color: var(--color-main-light);
    padding: 0.5em 1.5em;
