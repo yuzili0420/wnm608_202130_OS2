@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600&family=Poppins:wght@200;400&display=swap');
 
 
 :root {
@@ -7,9 +7,9 @@
 	--color-neutral-dark: #392f2f;
 
 
-	--color-main-light: #ece8f3;
-	--color-main-medium: #cfa8caff;
-	--color-main-dark: #896384ff;
+	--color-main-light: #F9EBEB;
+	--color-main-medium: #E9AAA8;
+	--color-main-dark: #6FC8CE;
 
 	--color-alt-light: #e7ecff;
 	--color-alt-medium: #abb6cbff;
@@ -17,13 +17,14 @@
 
 	--color-warning: blue;
 	--color-error: blue;
-  --color-purchase: #e7ecff;
+  --color-purchase: #E0B694;
 
 
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 	background-color: #f9f9f9;
 	padding-bottom: 10em;
 
@@ -35,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Arvo', serif;
+	font-family: 'Ibarra Real Nova', serif;
 }
 
 
