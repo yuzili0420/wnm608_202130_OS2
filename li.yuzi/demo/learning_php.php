@@ -43,7 +43,9 @@ echo (5 + 2) * 3;
 
 // Concatenation
 echo "<div>b + a = c</div>";
-echo "<div>$b + $a = ($b+$a)</div>";
+echo "<div>$b + $a = " . ($b+$a) . "</div>";
+
+
  
 ?>
 
