@@ -3,14 +3,14 @@
 //phpinfo()
 //broken
 
-echo "<h1>Hello World</h1>";
-echo "Goodbye World";
+echo "<h1>Hello World</h1>"; //literal string
+echo "Goodbye World\n\t";
 
 // assignment operator
-$a = 5;
+$a = 5; //literal number
 
 // String Interpolation
-echo "<div>I have $a things</div>";
+echo "<div>I have $a things</div>\n"; //variable number
 echo '<div>I have $a things</div>';
 
 // VALUE TYPES
@@ -44,7 +44,7 @@ echo (5 + 2) * 3;
 // Concatenation
 echo "<div>b + a = c</div>";
 echo "<div>$b + $a = " . ($b+$a) . "</div>";
-
+echo $b + $a
 
  
 ?>

@@ -219,8 +219,7 @@ a:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Raleway', sans-serif;
-  font-size: 100;
+  font-size: 110%;
   margin: 0em 2em;
   transition-duration: 0.4s;
   cursor: pointer;
