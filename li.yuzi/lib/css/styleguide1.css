@@ -137,8 +137,8 @@ a:hover {
 }
 
 .navbar h1 {
-	font-size: 1em;
-	font-family: Helveticas, Arial, sans-serif;
+	font-size: 1.4em;
+	/*font-family: Helveticas, Arial, sans-serif;*/
 	margin: 0;
 }
 
