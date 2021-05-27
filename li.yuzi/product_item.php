@@ -1,6 +1,7 @@
 <?php
 
 include "lib/php/functions.php";
+include "data/api.php";
 
 $product = MYSQLIQuery("
 	SELECT *
@@ -13,6 +14,7 @@ $thumbs = explode(",", $product->image_main);
 $thumb_elements = array_reduce($thumbs,function($r,$o){
    return $r."<img src='/aau/wnm608/li.yuzi/$o'>";
 });
+
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -35,7 +37,8 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 			
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<div class="card wall" style="margin-top: 0em;"> 
+				<form class="card wall" style="margin-top: 0em;" action="product_added_to_cart.php" method="post"> 
+					<input type="hidden" name="id" value="<?= $product->id ?>">
 					<div class="card-section">
 						<div class="product-title" style="font-family: 'Ibarra Real Nova';"><?= $product->name ?></div>
 						<div class="product-price">&dollar;<?= $product->price ?></div>
@@ -43,7 +46,7 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 					<div class="card-section">
 						<label class="form-label">Amount</label>
 						<div class="form-select">
-							<select>
+							<select name="amount">
 								<!-- option[value='$']*10>{$} -->
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -59,11 +62,12 @@ $thumb_elements = array_reduce($thumbs,function($r,$o){
 						</div>
 					</div>
 					<div class="card-section">
-						<a href="product_added_to_cart.php" class="button button1">ADD TO BAG</a>
+						<button type="submit" class="button button1">ADD TO CART</button>>
 					</div>
 					<div class="card wall">
 						<?= $product->description ?>
 					</div>
+					</form>
 				</div>
 			</div>
 		</div>

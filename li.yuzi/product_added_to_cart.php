@@ -2,6 +2,21 @@
 
 include "lib/php/functions.php";
 
+// pretty_dump($_POST);
+
+$product = MYSQLIQuery("SELECT * FROM `products` WHERE `id`=".$_POST['id'
+   ])[0];
+
+// $cart_product = cartItemById($product->id);
+
+// pretty_dump($product);
+
+
+
+
+
+addToCart($_POST['id']*1,$_POST['amount']*1);
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +32,11 @@ include "lib/php/functions.php";
 		<div class="card soft">
 			<?php
 
-         if(!isset($_GET['id'])) {
+         	if(!isset($_POST['id'])) {
             echo "You dun goofed";
-         } else {
+         	} else {
             ?>
-            <h2><?= $cart_product->amount ?> <?= $product->name ?> In Your Cart</h2>
+            <h2><?= $_POST['amount'] ?> <?= $product->name ?> In Your Cart</h2>
 
             <div class="display-flex">
                <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>

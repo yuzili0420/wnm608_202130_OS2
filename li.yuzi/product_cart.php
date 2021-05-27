@@ -3,10 +3,16 @@
 include "lib/php/functions.php";
 include "parts/templates.php";
 
-//resetCart();
+// resetCart();
 //pretty_dump(getCart());
 
-$cart = getCartItems();
+// $cart = getCartItems();
+
+$cart = MYSQLIQuery("
+	SELECT *
+	FROM `products`
+	WHERE `id` IN (5,9,12)
+");
 
 ?><!DOCTYPE html>
 <html lang="en">

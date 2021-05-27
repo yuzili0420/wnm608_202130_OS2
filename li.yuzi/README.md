@@ -2,10 +2,10 @@
 
 ## Store Website
 
-### Important Links
-
-- http://itsmeyu.com
 - http://itsmeyu.com/aau/wnm608/li.yuzi
+
+### Styleguide
+
 - http://itsmeyu.com/aau/wnm608/li.yuzi/styleguide/
 
 #### Recipes
@@ -14,6 +14,3 @@
 
 #### Landingpage
 - http://itsmeyu.com/aau/wnm608/li.yuzi/index.html
-
-#### Styleguide
-- http://itsmeyu.com/aau/wnm608/li.yuzi/styleguide/index.html

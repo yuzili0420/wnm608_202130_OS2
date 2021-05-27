@@ -62,50 +62,50 @@ return $r.<<<HTML
 HTML;
 }
 
-function makeCondensedCartList($r,$o) {
-$totalfixed = number_format($o->total,2,'.','');
-$amountselect = selectAmount($o->amount,10);
-return $r.<<<HTML
-<div class="display-flex card-section">
-   <div class="flex-stretch">
-      <strong>$o->title</strong>
-   </div>
-   <div class="flex-none">
-      <div>&dollar;$totalfixed</div>
-   </div>
-</div>
-HTML;
-}
+// function makeCondensedCartList($r,$o) {
+// $totalfixed = number_format($o->total,2,'.','');
+// $amountselect = selectAmount($o->amount,10);
+// return $r.<<<HTML
+// <div class="display-flex card-section">
+//    <div class="flex-stretch">
+//       <strong>$o->name</strong>
+//    </div>
+//    <div class="flex-none">
+//       <div>&dollar;$totalfixed</div>
+//    </div>
+// </div>
+// HTML;
+// }
 
 
 
-function cartTotals() {
-$cart = getCartItems();
+// function cartTotals() {
+// $cart = getCartItems();
 
-$cartprice = array_reduce($cart,function($r,$o){return $r+$o->total;},0);
+// $cartprice = array_reduce($cart,function($r,$o){return $r+$o->total;},0);
 
-$pricefixed = number_format($cartprice,2,".","");
-$tax = number_format($cartprice*0.0275,2,".","");
-$taxed = number_format($cartprice*1.0275,2,".","");
+// $pricefixed = number_format($cartprice,2,".","");
+// $tax = number_format($cartprice*0.0275,2,".","");
+// $taxed = number_format($cartprice*1.0275,2,".","");
 
-return <<<HTML
-<div class="card-section display-flex">
-   <div class="flex-stretch">
-      <strong>Sub Total</strong>
-   </div>
-   <div class="flex-none">&dollar;$pricefixed</div>
-</div>
-<div class="card-section display-flex">
-   <div class="flex-stretch">
-      <strong>Taxes</strong>
-   </div>
-   <div class="flex-none">&dollar;$tax</div>
-</div>
-<div class="card-section display-flex">
-   <div class="flex-stretch">
-      <strong>Total</strong>
-   </div>
-   <div class="flex-none">&dollar;$taxed</div>
-</div>
-HTML;
-}
+// return <<<HTML
+// <div class="card-section display-flex">
+//    <div class="flex-stretch">
+//       <strong>Sub Total</strong>
+//    </div>
+//    <div class="flex-none">&dollar;$pricefixed</div>
+// </div>
+// <div class="card-section display-flex">
+//    <div class="flex-stretch">
+//       <strong>Taxes</strong>
+//    </div>
+//    <div class="flex-none">&dollar;$tax</div>
+// </div>
+// <div class="card-section display-flex">
+//    <div class="flex-stretch">
+//       <strong>Total</strong>
+//    </div>
+//    <div class="flex-none">&dollar;$taxed</div>
+// </div>
+// HTML;
+// }

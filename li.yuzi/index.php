@@ -1,3 +1,8 @@
+<?php
+
+include "lib/php/functions.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +15,11 @@
 	
 	<?php include "parts/navbar.php" ?>
 
-	<div class="view-window" style="background-image: url(img/brightbeach.jpg)">
-    <h2>Beach Breeze</h2>
+	<div class="view-window" style="background-image: url(img/magic-mind.jpg)">
+    <h2>Your collagen of the day.</h2>
+	</div>
+	<br>
+	<div class="flex-justify-center display-block"><button class="button button3">SHOP NOW</button>
 	</div>
 
 </body>
