@@ -1,8 +1,12 @@
+<base href="/aau/wnm608/li.yuzi/">
+
 <header class="navbar">
 		<div class="container display-flex flex-align-center">
-			<div class="flex-none">
-			 <h1>Store Website</h1>
-			</div>
+			<a href="index.php"><div class="flex-none">
+			 
+			 	<img src="img/logo.svg" style="display: block;
+			 	    color: #FFFFFF; height: 26px;" />
+			 </div></a>
 			<div class="flex-stretch"></div>
 			<nav class="flex-none nav flex">
 				<ul>

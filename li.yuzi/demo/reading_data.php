@@ -17,7 +17,6 @@ $users_array = file_get_json("users.json");
    <title>Document</title>
 
 <?php include "../parts/meta.php"; ?>
- 
 </head>
 <body>
    <header class="navbar">

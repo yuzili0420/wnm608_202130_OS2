@@ -1,4 +1,8 @@
- <!DOCTYPE html>
+<?php
+
+include "lib/php/functions.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Product Added to Cart</title>
@@ -11,10 +15,22 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2>#### Added To Your Cart</h2>
+			<?php
 
-			<div>This is product item: #<?= $_GET['id']?> </div>
-			<div><a href="product_list.php">Back To Shopping</a></div>
+         if(!isset($_GET['id'])) {
+            echo "You dun goofed";
+         } else {
+            ?>
+            <h2><?= $cart_product->amount ?> <?= $product->name ?> In Your Cart</h2>
+
+            <div class="display-flex">
+               <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
+               <div class="flex-stretch"></div>
+               <div class="flex-none"><a class="form-button" href="product_list.php">Continue Shopping</a></div>
+            </div>
+            <?
+         }
+         ?>
 		</div>
 	</div>
 </body>
