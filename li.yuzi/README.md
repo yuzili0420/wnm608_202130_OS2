@@ -4,6 +4,10 @@
 
 - http://itsmeyu.com/aau/wnm608/li.yuzi
 
+### Github
+
+- https://github.com/yuzili0420/wnm608_202130_OS2
+
 ### Styleguide
 
 - http://itsmeyu.com/aau/wnm608/li.yuzi/styleguide/

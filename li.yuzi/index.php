@@ -19,7 +19,8 @@ include "lib/php/functions.php";
     <h2>Your collagen of the day.</h2>
 	</div>
 	<br>
-	<div class="flex-justify-center display-block"><button class="button button3">SHOP NOW</button>
+	<div class="flex-justify-center display-block">
+		<a href="product_list.php"><button class="button button3">SHOP NOW</button></a>
 	</div>
 
 </body>
