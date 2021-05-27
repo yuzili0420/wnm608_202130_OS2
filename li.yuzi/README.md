@@ -12,6 +12,10 @@
 
 - http://itsmeyu.com/aau/wnm608/li.yuzi/styleguide/
 
+### User Admin
+
+- http://itsmeyu.com/aau/wnm608/li.yuzi/demo/users_admin.php
+
 #### Recipes
 
 - http://itsmeyu.com/aau/wnm608/li.yuzi/recipes/index.html
